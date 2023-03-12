@@ -29,6 +29,10 @@ public class KeyboardInputService implements NativeKeyListener {
         return this.file.getAbsolutePath();
     }
 
+    public String getFileName(){
+        return this.file.getName();
+    }
+
     @Override
     public void nativeKeyTyped(NativeKeyEvent nativeKeyEvent) {
         try {
